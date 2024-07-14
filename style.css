@@ -1,0 +1,386 @@
+@font-face {
+    font-family: first;
+    src: url(/fonts/NBInternationalProBoo.woff2);
+}
+@font-face {
+    font-family: second;
+    src: url(/fonts/Rejouice-Headline.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #ff5f38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    transform: translate(-50%,-50%);
+
+}
+#cursor h5{
+    font-size:1.4vw  ;
+}
+#page1 video{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 300;
+    font-family:first ;
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 300;
+    cursor: pointer;
+    font-family:first ;
+}
+#page1-content h1 span{
+    font-family: second;
+    line-height: 27vw;
+    font-size: 25vw;
+    display: inline-block;
+}
+
+/* page 2 style here */
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 2.8vw;
+}
+
+#page2-top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 1.2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #00000092;
+}
+#page2-top h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    width: 26%;
+    font-family: first;
+}
+#page2-top h4{
+    font-size: 1.7vw;
+    font-family: first;
+    font-weight: 500;
+}
+.elem{
+    overflow: hidden;
+}
+
+.elem h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+    font-family: first;
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+
+#page3-top{
+    text-align: center;
+    overflow: hidden;
+}
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: first;
+}
+#page3-top h4 span{
+    font-size: 0.7;
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+    font-family: first;
+    border-radius: 10px;
+}
+#page3-top h2{
+    font-size: 4.1vw;
+    font-family: first;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+}
+#page3-top h2::after{
+    content: "";
+    position: absolute;
+    bottom: 1%;
+    left: 30%;
+    width: 40%;
+    z-index: 1;
+    border: 2px solid black;
+}
+#page3-elements{
+    position: relative;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+#page3-elements .box{
+    height: 100%;
+    width: 31%;
+    background-color: black;
+    position: relative;
+}
+#page3-elements .box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 1s ease;
+    z-index: 10;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+/* page 4 ke coding */
+.cursor-box{
+    position: relative;
+}
+
+#page4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 5%;
+}
+.cursor-box .cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #ff5f38;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    scale: 0;
+    z-index: 35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+
+}
+.cursor-box .cursor h2{
+    font-size: 1em;
+    color: white;
+}
+
+#page4-top{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin-left: 3%;
+    overflow: hidden;
+    padding-bottom: 1.3vw;
+}
+#page4-top h2{
+    font-size:2vw ;
+    font-family: first;
+    padding-top: 0.3vw;
+    font-weight: 300;
+}
+
+.page4-content{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.page4-content .elem2{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.page4-content .elem2 h3{
+    font-size: 6vw;
+    font-family: first;
+    font-weight: 200;
+}
+
+/* page 5 ke coding */
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+
+}
+
+#page5 video{
+    height: 100%;
+    width: 70%;
+}
+#page5 svg{
+    position: absolute;
+    height: 85%;
+}
+
+
+/* page6 code here */
+
+#page6 {
+    width: 100%;
+    height: 100vh;
+    padding: 4vw 0;
+    position: relative;
+}
+#page6 h1{
+    font-size: 10vw;
+    font-family: second;
+    font-weight: 200;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+}
+#swiperdiv{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    margin-top: -3%;
+}
+
+/*  swiper style here*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide{
+    font-size: 18px;
+    display: flex;
+    transition: all 1s ease;
+  }
+.swiper-slide img {
+    display: block;
+    width: 20%;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+.image-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.image-box img:nth-child(3){
+    height: 500px;
+}
+.image-box img:nth-child(1){
+    height: 500px;
+}
+.image-box2 img:nth-child(3){
+    height: 500px;
+}
+.image-box2 img:nth-child(1){
+    height: 500px;
+}
+.image-box2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Window loaser Animation */
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+#loader h3{
+ font-size: 2vw;
+ font-family: first;
+}
+
+
+/* rotater slider animation */
+
+
+#rotater{
+    animation: rotate 2s infinite;
+}
+@keyframes rotate{
+    from {
+       transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* end */
