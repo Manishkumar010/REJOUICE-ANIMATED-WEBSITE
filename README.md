@@ -1,1 +1,1 @@
-See there =  https://manishkumar010.github.io/REJOUICE-ANIMATED-WEBSITE/
+See there : https://manishkumar010.github.io/REJOUICE-ANIMATED-WEBSITE/
